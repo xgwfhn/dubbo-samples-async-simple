@@ -45,7 +45,7 @@ public class AsyncConsumer {
         });
 
         CompletableFuture<String> f = RpcContext.getContext().asyncCall(() -> asyncService.sayHello("async call request"));
-        System.out.println("async call returned: " + f.get());
+        System.out.println("async call returned: " + f.get());   
 
 
         RpcContext.getContext().asyncCall(() -> {
